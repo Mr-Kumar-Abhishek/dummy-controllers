@@ -1,4 +1,4 @@
 <?php
 	require_once('con.php');
-	echo "This page hopefully works ??";
+	require_once('display/design.php');
 ?>
