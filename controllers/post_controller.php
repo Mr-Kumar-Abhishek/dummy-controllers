@@ -1,5 +1,5 @@
 <?php
-	class PostConroller {
+	class PostController {
 		public function index() {
 			$posts = Post::all();
 			require_once("display/post/index.php");
