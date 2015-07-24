@@ -21,7 +21,9 @@
 	// list of controllers and their actions..
 	// considering those "allowed" values..
 
-	$controllers = array('page' => ['home', 'error']);
+	$controllers = array('page' => ['home', 'error'],
+						 'post' => ['index', 'show']);
+	
 
 	// checking if requested controller and actions are both allowed..
 	if(array_key_exists($controller, $controllers)) {
