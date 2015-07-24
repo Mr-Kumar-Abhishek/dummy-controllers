@@ -5,7 +5,7 @@
 		<header>
 			<a href="#">Home</a>
 		</header>
-		<!-- here will go the pipes -->
+			<?php require_once('pipes.php') ?>
 		<footer>
 			Copyleft
 		</footer>
