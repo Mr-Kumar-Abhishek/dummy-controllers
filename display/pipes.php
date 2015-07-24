@@ -22,10 +22,10 @@
 		if(in_array($action, $controllers[$controller])) {
 			call($controller, $action);
 		}else {
-			call('pages', 'error');
+			call('page', 'error');
 		}
 	}else {
-			call('pages', 'error');
+			call('page', 'error');
 		}
 
 	// if someone tries to access something else he/she will be redirected to error landing page..
