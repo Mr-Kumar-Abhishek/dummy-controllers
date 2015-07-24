@@ -5,8 +5,8 @@
 		private function __clone() {}
 		public static function get_instance() {
 			if (!isset(self::$instance)) {
-				$pdo_option[PDO::ATTR_ERRORMODE] = PDO::ERRORMODE_EXCEPTION;
-				self::$instance = new PDO('mysql:host=localhost;dbname=dummy', 'root', 'pass', $pdo_option);
+				$pdo_option[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+				self::$instance = new PDO('mysql:host=localhost;dbname=dummy', 'root', '', $pdo_option);
 			}
 			return self::$instance;
 		}
