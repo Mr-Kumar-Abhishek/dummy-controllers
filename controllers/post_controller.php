@@ -2,7 +2,7 @@
 	class PostConroller {
 		public function index() {
 			$posts = Post::all()
-			require_once()"display/post/index.php");
+			require_once("display/post/index.php");
 		}
 
 		public function show() {
