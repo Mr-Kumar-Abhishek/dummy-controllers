@@ -1,7 +1,7 @@
 <?php
 	class PostConroller {
 		public function index() {
-			$posts = Post::all()
+			$posts = Post::all();
 			require_once("display/post/index.php");
 		}
 
