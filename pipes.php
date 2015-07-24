@@ -7,6 +7,12 @@
 			case 'page':
 				$controller = new PageController();
 				break;
+			case 'post':
+				//to query database later in the controller
+				require_once('models/post.php'); 
+				$controller = new PostController();
+				break;
+
 		}
 
 		$controller->{$action}();
