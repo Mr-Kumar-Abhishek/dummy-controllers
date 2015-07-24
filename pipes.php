@@ -4,7 +4,7 @@
 		require_once('controllers/'. $controller . '_controller.php');
 
 		switch ($controller) {
-			case 'pages':
+			case 'page':
 				$controller = new PageController();
 				break;
 		}
