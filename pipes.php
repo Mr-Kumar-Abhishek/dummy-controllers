@@ -7,6 +7,12 @@
 			case 'page':
 				$controller = new PageController();
 				break;
+			case 'post':
+				//to query database later in the controller
+				require_once('models/post.php'); 
+				$controller = new PostController();
+				break;
+
 		}
 
 		$controller->{$action}();
@@ -15,8 +21,11 @@
 	// list of controllers and their actions..
 	// considering those "allowed" values..
 
-	$controllers = array('page' => ['home', 'error']);
-
+	$controllers = array('page' => ['home', 'error'],
+						 'post' => ['index', 'show']);
+	
+	//var_dump($controller);
+	//var_dump($action);
 	// checking if requested controller and actions are both allowed..
 	if(array_key_exists($controller, $controllers)) {
 		if(in_array($action, $controllers[$controller])) {
