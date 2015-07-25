@@ -24,7 +24,8 @@
 	$controllers = array('page' => ['home', 'error'],
 						 'post' => ['index', 'show']);
 	
-
+	//var_dump($controller);
+	//var_dump($action);
 	// checking if requested controller and actions are both allowed..
 	if(array_key_exists($controller, $controllers)) {
 		if(in_array($action, $controllers[$controller])) {
